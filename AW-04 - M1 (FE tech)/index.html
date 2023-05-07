@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front-end technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            color: rgba(18, 163, 225, 0.626);
+            background-color: :orange;
+            font-size: 20px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <a name="top"></a>
+    <a href="#chat"> what is chatGPT</a> <br>
+
+    <span style="color: blue;"> Hello <br><br> HTML!</span> <br>
+
+    <!-- this is how you comment in an HTML file-->
+
+    <!-- this is for cases of an empty tag -->
+    <tag></tag> 
+    <tag/> <!-- eaiser method to write an empty method-->
+
+    <!-- if you cant remember a special tag you can use the two 
+    meaning less tags <div> and <span> and apply styles to them-->
+
+    <span style="background-color: purple;"> Hello!</span> 
+    my <i> What</i> is your <span style="color: coral;">name?</span>
+    Tell me <span style="background-color:aqua">please!</span>
+
+    <p style="background-color: antiquewhite; color: black; font: italic;" title="My tooltip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores obcaecati sapiente totam vitae consectetur cupiditate consequatur illum sunt aliquam quas. Velit molestiae nostrum animi adipisci ab quae, consectetur at ipsa!</p>
+    <!--BOTH STYLE AND TITLE ARE ATTRIBUTES TITLE: SHOW A BOX WITH "INFO" WHEN YOU HOVER YOUR MOUSE ON P -->
+    <div> DIV 1</div>
+    <div> DIV 2</div>
+    <div> DIV 3</div>
+
+    <P style="font: icon; color: pink;" title="it's me">Hello Again!!!!</P>
+
+    <!--links-->
+    <p>search for every question you have <a name= "chat" href="https://chat.openai.com/chat">here</a>!</p>
+
+    <a href="#top">go to top!</a>
+
+    <!--buttons-->
+
+    <button onclick="window.location.href='https://www.google.com/search?q=jaguar+drawing&rlz=1C5CHFA_enNO907NO907&sxsrf=AJOqlzV4n_FbaIvg3dCKvfMPiCXqtSOwHA:1673278400066&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKtJXl57r8AhWn_CoKHT3zCFwQ_AUoAXoECAEQAw&biw=735&bih=749&dpr=1#imgrc=j9q7ZtTD3kM_PM';">
+        Jaguar</button>
+    
+    <button onclick="sike()">million dollars</button>
+
+    <button onclick="window.location.href='https://www.youtube.com/'">youtube 1</button>
+    <button onclick="wrongAlt()">youtube 2</button>
+
+    <!--Images-->
+
+    <img width="100" height="100"
+        src="https://www.shutterstock.com/image-illustration/futuristic-motorcycle-dark-seedy-urban-600w-2032484726.jpg" alt="Futuristick motorcycle">
+
+    <img width="200" height="100" src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo-768x432.png" 
+    alt="google logo" onclick="window.location.href='https://www.google.com/'";>
+
+    <!--alt ^-->
+    <a href="https://google.com">
+        <img width="400" height="200" src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" alt="google logo">
+    </a>
+
+    
+    <!--lists-->
+    <p>unordered list
+        <ul>
+            <li>pizza</li>
+            <li>tomatos</li>
+            <li>garlic</li>
+        </ul>
+    </p>
+
+    <p>ordered list 
+        <ol>
+            <li>messi</li>
+            <li>ronaldo</li>
+            <li>maradona</li>
+        </ol>
+    </p>
+
+    <p>"definition list"
+        <dl>
+            <dt>sky:</dt>
+                <dd>blue</dd>
+            <dt>sun:</dt>
+                <dd>yellow</dd>
+            <dt>grass:</dt>
+                <dd>green</dd>
+        </dl>
+    </p>
+
+    <p>fav resturants
+        <ol>
+            <li>mcdonalds
+                <ul>
+                    <li>cheese burger</li>
+                    <li>mcflurry</li>
+                </ul>
+                
+            </li>
+
+            <li>burgerking
+                <ul>
+                    <li>crispy chicken</li>
+                    <li>chilli cheese</li>
+                </ul>
+                
+            </li>
+        </ol>
+    </p>
+
+    <!--tables-->
+    <!--<table> to iitiate <tr> (table rows) <th> (table headers) <td> (element)-->
+
+<p>
+   
+    <h3> My table</h3>
+    <table class="styled">
+        <tr style="background-color: yellow; font-size: 300%;">
+            <th>name</th>
+            <th>age</th>
+            <th>height in cm</th>
+        </tr>
+
+        <tr>
+            <td>Milena</td>
+            <td>20</td>
+            <td>163</td>
+        </tr>
+
+        <tr>
+            <td>Danial</td>
+            <td>21</td>
+            <td>178</td>
+        </tr>
+
+        <tr>
+            <td>Shiro</td>
+            <td>8 months</td>
+            <td>35</td>
+        </tr>
+    </table>
+</p>
+
+<!--text formatting-->
+
+<p>
+Lorem <b>ipsum dolor</b>, sit amet <strong>consectetur</strong> adipisicing <i>elit</i>. 
+Nesciunt <em>iusto</em> quasi amet <mark>praesentium</mark> a adipisci 
+<small>architecto</small> ea laboriosam <del>laborum</del> quos maxime,
+<ins>temporibus</ins> atque ipsum ex <sub> consequatur</sub> <sup>Magnam, quae facere</sup>.
+</p>
+
+<!--CSS Basics-->
+
+<p>
+    <button class="large colorful" id="buttonA">button A</button>
+    <button class="colorful">button B</button>
+    <button class="large" id="buttonC">button C</button>
+</p>
+
+<!--text and shadow manipulation-->
+
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>Danial</h4>
+
+<!--Size manipulation-->
+
+    <button class="size" id="button1">button 1</button>
+    <button class="size">button 2</button>
+    <button class="size">button 3</button>
+    
+
+    <script src="script.js"></script>
+</html>

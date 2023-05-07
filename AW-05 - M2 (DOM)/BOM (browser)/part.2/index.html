@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser object model part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+    <h1>Browser Object Model Part.2</h1>
+
+    <h2>alerts</h2>
+        <p>window object provides us with three popups: Alerts, prompts and confirm.</p>
+
+    <h1>The window object</h1>
+    <h2>the alert() method</h2>
+    <p>click the button to alert the hostname of the current url</p>
+    <button onclick="myFunction()">try it</button> <br>
+
+<!--sweetalert -> a prettier way to make alerts-->
+    <button onclick="myFunction1">sweetalert</button>
+    <p>sweet alert has to be linked to html with script tag <br>
+    read more <a href="https://sweetalert2.github.io/">here</a> about sweetalert
+    </p>
+
+    <h2>confirm box</h2>
+    <!--confirmbox-->
+    <p>this is a confirm function</p>
+        <button onclick="myFunction2()">confirm</button>
+        <p id="demo"></p>
+
+    <p>this is a <strong>promt</strong> that uses users data </p>
+        <button onclick="myFunction3()">prompt</button>
+        <p id="demo1"></p>
+    
+    <p>to read more about confirm() prompt click <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm">here</a> </p>
+
+
+    <!--timing-->
+    <h2>timing and how it works</h2>
+
+    <p>there are two key methods called <br>
+    setTimeout() - executes a function after a specific time <br>
+    set interval() - same as setTimeout, but the function repeats continuously </p>
+    
+    <h3>javascript clock</h3>
+    <div id="txt2"></div>
+    
+
+
+    <h2>introduction to coockies</h2>
+    <p>
+        - coockies are small text files in the users computer storing info about them. <br>
+        - cookies are the solution to when the web server sends a web page to a browser and the connection is lost. <br>
+        - f.ex when a user visits a website their name is stored in the cookie, and will be rembered for the next time.
+    </p>
+    <script src="script.js"></script>
+    <script src="sweetalert2@11.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Z-Index */
+
+#pickachu {
+    display: none;
+    position: absolute;
+    /*enables us to hardcode our elements
+position, regardless of other elements*/
+/*elements with higher z-index will always be above
+elements with higher ones (default z index = 0)*/
+    z-index: -1;
+    /*take up 100% of the screen regardless of screen width or height*/
+    width: 100%;
+    height: 100%;
+    /*starting point is 0 from left and 0 from top (no space)*/
+    left: 0;
+    top: 0;
+}
+
+button {
+    /*if elements have same z-index the element defined later 
+    in HTML code will be visable */
+    z-index: -1;
+}
+
+/*display and visability*/
+
+/*both paragraph and List have a defult of block display 
+...(they get a new block of line each)*/ 
+p.inline, li {
+    color: rgb(177, 32, 32);
+    /*changes default display from block to inline*/
+    display:inline;
+}
+
+.display {
+    border: 2px solid black;
+}
+
+.display * {
+    border: 1px dotted red;
+}
+/*marging is only on the left and the right of an element
+not at top or bottom*/
+em {
+    background-color: beige;
+    margin: 1rem;
+}
+
+/*padding is offered on all 4 sides and can overlapp other elements
+not push them away*/ 
+strong {
+    background-color: peru;
+    padding: 1rem;
+}
+
+/*inline elements are as wide as their content*/
+a {
+    /*same width as before*/
+    width: 1000px;
+}
+
+h1 {
+    border: 3px black dotted;
+}
+
+div {
+    border: 1px red dashed;
+    /*this adds 2 rems between each element
+    rather than 2 rem FOR each element*/
+    margin: 2rem;
+    /*padding will add 2 rem For each (so 4 rems if
+both elements have a padding of 2 rem*/
+    padding: 2rem;
+
+}
+
+/*marging affects the outer space of an emement (sorroundings)
+  padding affects the inner space of an element
+  you can see the space of an element by adding a border*/ 
+
+
+/*LEGAL elemnt nesting:
+
+block in block: <p>this is a <div>block</div> in a block</p>
+inline in block: <p> this is an <a href=link>inline<a/> in a block</p>
+inline in inline: <em>this is an <a href=link>inline<a/> in an inline</em>
+
+ILLEGAL: 
+Block in inline: <a href= link><p>this is a block in an inline</p></a>
+**DON'T DO THIS**
+
+*/
+
+a.block {
+    display: block;
+}
+
+a#hidden {
+    visibility: hidden;
+}
+
+#dotted { 
+    border: dotted royalblue;
+    
+}
+
+#dashed {
+    border: dashed purple;
+    border-width: thick;
+}
+
+#solid {
+    border: 0.5cm solid red;
+}
+
+#double { 
+    border: double plum;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+#groove {
+    border: groove pink;
+    /*top, right, bottom and left margin*/
+    margin: 10px 7px 2px 5px;
+}
+
+#ridge {
+    border: ridge yellow;
+    border-width: 5px;
+}
+
+#inset {
+    border: inset green;
+}
+
+#outset {
+    border: outset mediumturquoise;
+    border-width: medium;
+}
+
+p#hidden {
+    border: hidden;
+}
+
+#mixed {
+    border-style: dotted dashed solid;
+    /*top right bottom and left color*/
+    border-color:orange green blue;
+    /*top, right, bottom and left border width*/
+    border-width: 2px 5px 2px;
+}
+
+ #dotted, #dashed, #solid, #double {
+    display: inline;
+    margin: 10px;
+}
+
+
+#margin1 {
+    /*width of content is 500px*/
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2px 10px;
+    
+    /*centers the content (based on surroundings*/
+    margin: 0 auto;
+}
+
+div#contentbox {
+    border: none;
+    width: 100%;
+    /*margin 0 removes all "outside" space content is holding*/
+    margin: 0 auto;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+}

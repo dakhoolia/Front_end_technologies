@@ -1,0 +1,29 @@
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+
+}
+
+button {
+    background-color: green;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+li.inline {
+    display: inline;
+}
+
+ul, h1 {
+    color: white;
+}

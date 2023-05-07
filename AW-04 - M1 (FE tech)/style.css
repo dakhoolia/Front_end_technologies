@@ -1,0 +1,121 @@
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100%;
+    line-height: 2;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    border: 1;
+    background: yellow;
+}
+
+button:hover {
+    /* mouse behaviour like link*/
+    cursor: pointer;
+}
+
+button:focus
+button:hover
+button:active {
+    background: none;
+    border-color: inherit;
+    border-radius: 0;
+}
+/*class selector*/
+.large {
+    font-size: 200%;
+}
+
+.colorful {
+    background-color: blueviolet;
+}
+
+/*id selector*/
+#buttonC {
+    color: red;
+    background-color: blanchedalmond;
+}
+
+/*universal selector (everything on page*/
+
+* {
+    font-style:unset;
+}
+
+/*grouping selector*/
+
+p, h3, div {
+    background-color: bisque;
+}
+
+body {
+    background-color: mintcream;
+}
+
+/*decendant selector (selects tags withing tags*/
+
+p b, p i{
+    background-color: red;
+}
+
+#buttonA {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*text and shadow manipulation*/
+
+/* decorations can have uo to 4 elements
+    1. line type 2. color 3. style 4. thickness
+*/
+h1 {
+    text-decoration: overline red double;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: line-through blue dotted;
+}
+
+h3 {
+    text-decoration: underline green double 1px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase; /*set to upper or lower case*/
+    text-indent: 5px; /*adds indentation and spacing (between text and edges)*/
+    letter-spacing: 2px; /*adds spacing between letters*/
+    word-spacing: 3px; /*adds spacing between words*/
+
+    /*shadow: horizontal verical blur-level color */
+    text-shadow: 3px 3px 5px gray;
+    
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline double 2px red;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* size manipulation*/
+
+button.size {
+    width: 30%; /*will take up 30% of the pages width*/
+    min-width: 20px;
+    max-width: 250px;
+    height: 40px;    
+}
+
+#pickachu {
+    /*enables to hardcode our elements position*/
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

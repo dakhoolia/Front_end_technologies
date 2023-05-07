@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model (DOM part.2)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="h1">this is part 2 of documnet object models</h1>
+
+    <h2 id="event" onclick="changeText(this)">this is DOM events</h2>
+    
+        <img id="img1" src="img/events.png" alt="different type of events">
+
+    <p id="p1">This is change text effect with DOM</p>
+
+    <div id="myDiv1">
+        <h1>Bubbling:</h1>
+        <p id="para1">Click here!</p>
+    </div>
+
+    <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="para2">Click here</p>
+    </div>
+
+    <button id="button">change color?</button> <br>
+
+    <!--task button -->
+    <h2>task button</h2>
+    <button id="button2">task button!!</button>
+
+    <div id="div3">
+        <img width="100px" height="100px" src="img/events 2.png" alt="">
+        <img width="100px" height="100px" src="img/events.png" alt="">
+        <img width="100px" height="100px" src="img/events 2.png" alt="">
+    </div>
+
+    <p><button onclick="myMove()">Click me</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+
+    <div id="background">
+        <div id="circle"></div>
+    </div>
+
+    <div id="background2">
+        <div id="circle2"></div>
+    </div>
+
+
+    <!--DOM FORM VALIDATION-->
+    <h2>Javascript validation</h2>
+
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+    <img src="img/validations.png" alt="" height="500px" width="600px">
+
+    <br>
+
+    <!--getting forms value-->
+    <form id="Dani">
+        <input type="button"
+        onclick="alert(document.forms[1].id)"
+        value="Dani's form">
+    </form>
+
+    <form id="Milly">
+        <input type="button"
+        onclick="alert(document.forms[2].id)"
+        value="Mill's form">
+    </form>
+
+    <form id="Dyana">
+        <input type="button"
+         onclick="alert(document.forms[3].id)"
+         value="dyana's button">
+    </form>
+
+    <!--getting form access-->
+    <form name="login">
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button type="submit">Log in</button>
+    </form>
+
+    <div id="div1">
+        <p id="p5">this is a paragraph</p>
+        <p id="p6">this is another paragraph</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

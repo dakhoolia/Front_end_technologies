@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser object model (BOM)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Browser Object Model</h1>
+
+    <img src="img/BOM hierarchy.png" alt="" height="400" width="600">
+
+    <h2>The Window Object</h2>
+
+    <h3>the resizeBy() method</h3>
+    <p>Open a new window, and resize it to 300 x 300:</p>
+    <button onclick="openWin()">create new window</button>
+    <button onclick="resizeWin()">resize window</button>
+
+    <div>
+        <h2>open.window(parameteres)</h2>
+            <img src="img/parameters.png" alt="" height="400" width="500">
+    </div>
+
+<!--using open window button from previous-->
+    <button onclick="moveWinTo()">Move the window to 150 150</button>
+    <button onclick="moveWinby()">Move the window by 75 75</button>
+    <h3>this is my task</h3>
+
+    <!--activity-->
+    <button onclick="openWin1">click this</button>
+
+    <div>
+    <h2 id="screen">screen</h2>
+            <p>the window.screen contains information about the user's screen such as: <br>
+                - width: current size of the screen <br>
+                - height: current size of screen <br>
+                - availWidth: the amount of space in pixles available to the window <br>
+                - availHeight: the amount of space in pixles available to the window <br>
+                - colorDepth: color depth of screen <br>
+                - pixelDepth: pixel depth of screen <br>
+            
+                *read only and won't affect code* <br>
+                
+                difference between window and screen is window is the window open and screen is the physical screen</p>
+            <p>for some screen properties and methods click <a href="https://developer.mozilla.org/en-US/docs/Web/API/screen">here</a></p>
+        </div>
+
+    <h2>javascript</h2>
+        <h3>the window.location object</h3>
+    
+        <p> we can use the window.location object to access the current windows adress (URL) or
+    redirect the browser to the new page </p>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <input type="button" value="load new document" onclick="newDoc()">
+    <p>read more about window.location <a href="https://developer.mozilla.org/en-US/docs/Web/API/location">here</a></p>
+    
+    <!--task-->
+    <h3>this is my task</h3>
+
+    <input type="button" value="changing url to google" onclick="google()">
+
+    <h2>window.history</h2>
+    <p> due to user privacy history properties are very limited</p>
+            <p>
+                some main methods are: <br> <br>
+                back(): will go back one page earlier in the user's history <br>
+                forward(): will go forward one page in the user's history <br>
+                length property: number of pages in the user's history  <br>
+                go(): navigate forward and backward for spesific number of pages (-1 back) (1 forwar)
+            </p>
+            <p>to read more about window.histoy methods and properties read <a href="https://developer.mozilla.org/en-US/docs/Web/API/history">here</a></p>
+    
+    <button onclick="history.go(-2)">go to pages back</button>
+    <button onclick="back()">go back</button>
+    <button onclick="history.forward()">go forward</button>
+
+    <!--task-->
+    
+    <h3>this is my task</h3>
+    <button onclick="goBack()">go 5 back</button>
+
+    <h2>Navigator</h2>
+            <p>The window.navigator object stores information about the user’s browser. Remember the notifications to accept cookies before using a website? Websites access this information in precisely the same way as from this object.</p>
+        <p>
+            Navigator has the following properties: <br>
+navigator.cookieEnabled – returns the Boolean, true is cookies are enabled. <br>
+navigator.appName – returns the browser name.<br>
+navigator.appCodeName – returns the browser code name.<br>
+navigator.product – returns the browser engine name.<br>
+navigator.appVersion – returns the browser version.<br>
+navigator.userAgent – returns browser user-agent header.<br>
+navigator.platform – returns browser platform.<br>
+navigator.language – returns browser language.<br>
+navigator.online – returns the Boolean. True if the browser is online.<br>
+navigator.geolocation – Returns the geo-location object of the user’s location.
+And methods:<br>
+navigator.javaEnabled() – returns the Boolean. True if Java is enabled.<br>
+
+to read more about navigators click <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator">here</a>
+        </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    /*remove whitespace between code and bode*/
+    margin: 0;
+}
+
+#h1 {
+    text-align: center;
+    text-shadow: 5px 4px grey;
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 0px;
+    background-color: bisque;
+    
+}
+
+#event {
+    cursor:pointer;
+}
+
+#myDiv1, #myDiv2 {
+    background-color: yellow;
+    padding: 50px;
+}
+#para1, #para2 {
+    background-color: blue;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px;
+}
+
+#div3 {
+    border: solid 10px lightpink;
+    width: 700px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*select the (number) child of an element*/
+div img:nth-child(2) {
+    border: solid 2px green;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+}
+
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
+
+#background {
+    background: black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+}
+
+
+#background2 {
+    background: purple;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#circle2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: yellow;
+    position: relative;
+}
